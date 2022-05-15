@@ -9,6 +9,7 @@ import sys
 
 from pathlib import Path
 import os
+import time
 
 ### LOGGING ###
 
@@ -27,7 +28,7 @@ def trace(tag, text):
 		if LOG_TO_FILE:
 			# SLOW - opening file every time we log, lol
 			with open('plugin_trace.txt', 'a') as file:
-				file.write(f"[{tag}] {text}\n")
+				file.write(f"{time.time()} :::: [{tag}] {text}\n")
 		else:
 			print(line)
 

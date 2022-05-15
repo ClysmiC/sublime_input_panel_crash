@@ -1,0 +1,12 @@
+33.811 :::: [input-panel] open(..)
+33.811 :::: [input-panel] 	calling show_input_panel(..)
+33.813 :::: [input-panel] 	self.view = View(3)
+35.685 :::: [input-panel] on_deactivated(..)
+35.686 :::: [input-panel] 	calling close(..)
+35.686 :::: [input-panel] close(..)
+35.686 :::: [input-panel] 	calling run_command("hide_panel")
+35.687 :::: [input-panel] on_cancel(..)
+37.411 :::: [input-panel] open(..)
+37.411 :::: [input-panel] 	calling show_input_panel(..)
+38.492 :::: [input-panel] 	self.view = View(0)
+*** CRASH ***
