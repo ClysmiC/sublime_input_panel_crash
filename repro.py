@@ -15,7 +15,7 @@ import os
 LOG_INPUT_PANEL = "input-panel"
 # LOG_INPUT_PANEL = None
 
-LOG_TO_FILE = True
+LOG_TO_FILE = False
 
 def plugin_loaded():
 	if LOG_TO_FILE:
