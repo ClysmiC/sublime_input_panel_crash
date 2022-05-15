@@ -28,7 +28,12 @@ def trace(tag, text):
 		if LOG_TO_FILE:
 			# SLOW - opening file every time we log, lol
 			with open('plugin_trace.txt', 'a') as file:
-				file.write(f"{time.time()} :::: [{tag}] {text}\n")
+				timestamp = time.time()
+				timestamp %= 100
+				timestamp *= 1000
+				timestamp = round(timestamp)
+				timestamp /= 1000
+				file.write(f"{timestamp} :::: [{tag}] {text}\n")
 		else:
 			print(line)
 
