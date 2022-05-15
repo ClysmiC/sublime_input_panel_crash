@@ -35,7 +35,7 @@ def trace(tag, text):
 				timestamp /= 1000
 				file.write(f"{timestamp} :::: [{tag}] {text}\n")
 		else:
-			print(line)
+			print(text)
 
 ### INPUT PANEL ###
 
